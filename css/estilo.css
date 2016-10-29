@@ -1,0 +1,43 @@
+#div-login{
+  	position:absolute;
+  	width:600px;
+  	top:35%;
+  	left:30%;	
+  }
+
+#body-login{
+	background-image: url("../img/fondo_login.jpg");
+ 	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#div-mensaje{
+    display: none;
+}
+
+#div-admin{
+    font: 100% small-caps;
+}
+
+
+#txt_usuario{width:300px;} 
+#txt_contraseña{width:300px;}
+
+#col-enfermeros{
+    background-color: #FF9999;
+}
+#div-medicos{
+    background-color: #9999FF;
+}
+#div-aseo{
+    background-color: #99FF99;
+}
+#div-personal{
+    background-color: #6666FF;
+}
+
+#h3-personal{
+    color: #FFFFFF;
+}
