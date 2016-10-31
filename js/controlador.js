@@ -40,13 +40,13 @@ $(document).ready(function(){
 			data: parametros,
 			success:function(resultado){
 				if (resultado == "1") {
-                    location.href="form/form_administrador.php";
+                    location.href="form/form_administrador1.php";
                 } 
                 else if (resultado == "2"){
-                    location.href="form/form_administrador.php";
+                    location.href="form/form_administrador1.php";
                 }
                 else if (resultado == "3"){
-                    location.href="form/form_administrador.php";
+                    location.href="form/form_administrador1.php";
                 }
                 else if (resultado == "0"){
                     $("#div-mensaje").show();

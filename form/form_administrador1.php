@@ -53,10 +53,10 @@ http://www.templatemo.com/tm-402-genius
         <div class="responsive_menu">
             <ul class="main_menu">
                 <li><a class="show-1 homebutton" href="#"><i class="fa fa-home"></i>Homepage</a></li>
-                <li><a class="show-2" href="#"><i class="fa fa-group"></i>About Us</a></li>
-                <li><a class="show-3" href="#"><i class="fa fa-briefcase"></i>Our Gallery</a></li>
-                <li><a class="show-4" href="#"><i class="fa fa-cogs"></i>Services</a></li>
-                <li><a class="show-5" href="#"><i class="fa fa-globe"></i>Contact Us</a></li>
+                <li><a class="" href="../index.php"><i class="fa fa-group"></i>About Us</a></li>
+                <li><a class="" href="form_administrador1.php"><i class="fa fa-briefcase"></i>Our Gallery</a></li>
+                <li><a class="" href="#"><i class="fa fa-cogs"></i>Services</a></li>
+                <li><a class="" href="#"><i class="fa fa-globe"></i>Contact Us</a></li>
             </ul> <!-- /.main_menu -->
         </div> <!-- /.responsive_menu -->
     </div> <!-- /responsive_navigation -->
@@ -69,8 +69,8 @@ http://www.templatemo.com/tm-402-genius
                 <div class="col-md-2 visible-md visible-lg">
                     <div class="main_menu">
                         <ul class="menu">
-                            <li><a  href="#" data-toggle="tooltip" data-original-title="Inicio"><i class="fa fa-home"></i></a></li>
-                            <li><a  href="#" data-toggle="tooltip" data-original-title="Adminsitrador"><i class="fa fa-user"></i></a></li>
+                            <li><a  href="../index.php" data-toggle="tooltip" data-original-title="Inicio"><i class="fa fa-home"></i></a></li>
+                            <li><a  href="form_administrador1.php" data-toggle="tooltip" data-original-title="Adminsitrador"><i class="fa fa-user"></i></a></li>
                             <li><a  href="#" data-toggle="tooltip" data-original-title="Reportes"><i class="fa fa-briefcase"></i></a></li>
                             <li><a  href="#" data-toggle="tooltip" data-original-title="Personal de la Clinica"><i class="fa fa-cog"></i></a></li>
                             <li><a  href="#" data-toggle="tooltip" data-original-title="otra cosa"><i class="fa fa-globe"></i></a></li>
@@ -95,9 +95,9 @@ http://www.templatemo.com/tm-402-genius
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title">Administrador</h2>
+                                <h2 class="page-title" align="left">Administrador</h2>
                             </div> <!-- /.page-header -->
-                            <div class="content-inner">
+                            <div  class="content-inner ">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <h3 class="widget-title">Medicos</h3>
