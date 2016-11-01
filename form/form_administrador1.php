@@ -103,41 +103,68 @@ http://www.templatemo.com/tm-402-genius
                                         <h3 class="widget-title">Medicos</h3>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input class="mainBtn" type="submit" name="" value="Ver medicos">
+                                                <button id="btn-ver-medicos" class="mainBtn">medicos</button>
                                             </div>
                                             <div class="col-md-6">
-                                                <input class="mainBtn" type="submit" name="" value="Ver recetarios">
+                                                <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
                                             </div>
                                         </div>
-                                        
                                     </div> <!-- /.col-md-7 -->
+
                                     <div class="col-md-6">
                                         <h3 class="widget-title">enfermeras</h3>
                                         <div class="row">
                                             <div class="col-md-6">
-                                                <input class="mainBtn" type="submit" name="" value="Ver enfermeras">
+                                                <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
                                             </div>
                                             <div class="col-md-6">
-                                                <input class="mainBtn" type="submit" name="" value="Ver consultas">
+                                                <button id="btn-ver-consultas" class="mainBtn">consultas</button>
                                             </div>
                                         </div>
                                     </div> <!-- /.col-md-5 -->
-                                    </div> <!-- /.row -->
-                                    <div class="our-team">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <h3 class="widget-title">Personal de aseo</h3>
-                                            </div> <!-- /.col-md-12 -->
-                                        </div> <!-- /.row -->
-                                        <div class="row">
+                                </div> <!-- /.row -->
+
+                                <div class="our-team page-header-2">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3 class="widget-title">Personal de aseo</h3>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <input class="mainBtn" type="submit" name="" value="Ver Personal de aseo">
+                                                    <button id="btn-ver-personal" class="mainBtn">Personal de aseo</button>
                                                 </div>
                                             </div>
-                                        </div> <!-- /.col-md-4 -->
+                                        </div> <!-- /.col-md-7 -->
                                     </div> <!-- /.row -->
-                                </div> <!-- /.our-team -->
+                                </div>
+
+                                <div class="our-team page-header-2">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <button class="mainBtn" id="btn-pacientes-dia">Pacientes del dia</button>
+                                        </div> <!-- /.col-md-3 -->
+                                        <div class="col-md-3">
+                                            <button class="mainBtn" id="btn-medicamentes">Medicamentos</button>
+                                        </div> <!-- /.col-md-3 -->
+                                        <div class="col-md-3">
+                                            <button class="mainBtn" id="Ver-pacientes-dia">Estadisticas</button>
+                                        </div> <!-- /.col-md-3 -->
+                                        <div class="col-md-3">
+                                            <button class="mainBtn" id="Ver-pacientes-dia">Expedientes</button>
+                                        </div> <!-- /.col-md-3 -->
+                                    </div> <!-- /.row -->
+                                </div>
+
+                                <div class="our-team">
+                                    <div class="col-md-12">
+                                        <h3 class="widget-title">Contratar personal</h3>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <button id="btn-contratar-personal" class="mainBtn">Contratar</button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /.col-md-12 -->
+                                </div>
+                                
                             </div> <!-- /.content-inner -->
                         </div> <!-- /.about-us -->
                     </div> <!-- /.content-holder -->

@@ -10,7 +10,7 @@ body { font: 14px/23px 'Dosis', Arial, sans-serif; -webkit-font-smoothing: antia
 
 a { -webkit-transition: all 0.1s ease-in-out; -moz-transition: all 0.1s ease-in-out; -ms-transition: all 0.1s ease-in-out; -o-transition: all 0.1s ease-in-out; transition: all 0.1s ease-in-out; }
 
-input::-moz-focus-inner { border: 0; }
+button::-moz-focus-inner { border: 0; }
 
 a:hover, a:active, a:focus { text-decoration: none; outline: none; }
 
@@ -46,6 +46,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Dosis', serif; color: white; }
 
 .page-header { padding: 20px 30px; margin: 0; border-bottom: 1px solid #a71e2b; }
 
+.page-header-2 { padding: 20px 30px; margin: 0; border-bottom: 1px solid #706869; }
+
 .page-title { font-size: 20px; text-transform: uppercase; margin: 0; }
 
 .content-inner { padding: 30px; }
@@ -62,7 +64,7 @@ select { background-image: url("../images/select-arrow.png"); background-repeat:
 select::-ms-expand { display: none; }
 
 @-moz-document url-prefix() { select { padding-top: 5px; line-height: 30px; } }
-.widget-title { font-size: 16px; margin: 0 0 25px 0; font-weight: 600; text-transform: uppercase; }
+.widget-title { font-size: 16px; margin: 0 0 10px 0; font-weight: 600; text-transform: uppercase; }
 
 /*------------------------------------------------------
 	HomePage Styling 
@@ -82,7 +84,7 @@ select::-ms-expand { display: none; }
 
 .progress { box-shadow: none; background-color: #d4d4d4; -webkit-border-radius: 0; border-radius: 0; }
 
-.our-team { margin-top: 40px; }
+.our-team { margin-top: 20px; }
 
 .member-thumb { overflow: hidden; }
 .member-thumb img { width: 100%; height: auto; }
