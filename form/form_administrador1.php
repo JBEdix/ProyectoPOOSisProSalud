@@ -9,10 +9,7 @@
     <title>Administrador</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-<!--
-Genius Template
-http://www.templatemo.com/tm-402-genius
--->
+
     <meta name="author" content="templatemo">
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>

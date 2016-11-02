@@ -164,11 +164,14 @@ label { font-weight: normal; }
 .full-row textarea { width: 100%; }
 
 button.mainBtn { background-color: #a71e2b; color: white; border: 0; outline: 0; margin-top: 20px; padding: 7px 12px; text-transform: uppercase; }
+button.mainBtn2 { background-color: #a71e2b; color: white; border: 0; margin-top: 0px; padding: 3px 12px; text-transform: uppercase; }
 
 .our-location li { line-height: 28px; }
 .our-location li span { color: #a71e2b; margin-right: 10px; }
 .our-location li span i { margin-right: 10px; }
 .our-location li a { color: white; }
+
+.full-row input{width: 100%; margin-bottom: 10px; }
 
 .google-map { margin-top: 30px; }
 
