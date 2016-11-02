@@ -93,51 +93,33 @@ http://www.templatemo.com/tm-402-genius
                     <div id="menu-container">
                         
                         
+
+
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
                                 <h2 class="page-title" align="left">Administrador</h2>
-                            </div> <!-- /.page-header -->
-                            <div  class="content-inner ">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <h3 class="widget-title">Medicos</h3>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <button id="btn-ver-medicos" class="mainBtn">medicos</button>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
-                                            </div>
-                                        </div>
-                                    </div> <!-- /.col-md-7 -->
-
-                                    <div class="col-md-6">
-                                        <h3 class="widget-title">enfermeras</h3>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <button id="btn-ver-consultas" class="mainBtn">consultas</button>
-                                            </div>
-                                        </div>
-                                    </div> <!-- /.col-md-5 -->
-                                </div> <!-- /.row -->
-
+                            </div> <!-- /.page-header -->                            
+                            <div  class="content-inner">
                                 <div class="our-team page-header-2">
                                     <div class="row">
                                         <div class="col-md-12">
-                                            <h3 class="widget-title">Personal de aseo</h3>
+                                            <h3 class="widget-title">Plataformas</h3>
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                    <button id="btn-ver-personal" class="mainBtn">Personal de aseo</button>
+                                                    <div class="col-md-6">
+                                                        <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <button id="btn-ver-consultas" class="mainBtn">consultas</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div> <!-- /.col-md-7 -->
+                                        </div> <!-- /.col-md-12 -->
                                     </div> <!-- /.row -->
                                 </div>
 
                                 <div class="our-team page-header-2">
+                                <h3 class="widget-title">Estadisticas</h3>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <button class="mainBtn" id="btn-pacientes-dia">Pacientes del dia</button>
@@ -154,17 +136,38 @@ http://www.templatemo.com/tm-402-genius
                                     </div> <!-- /.row -->
                                 </div>
 
+                                
+                                <div class="row page-header-2">
+                                    <div class="col-md-12">
+                                        <h3 class="widget-title">Personal Cinica</h3>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <button id="btn-ver-medicos" class="mainBtn">medicos</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <button id="btn-ver-personal" class="mainBtn">Personal de aseo</button>
+                                            </div>
+                                        </div>
+                                    </div> <!-- /.col-md-7 -->
+                                </div>
+
                                 <div class="our-team">
                                     <div class="col-md-12">
                                         <h3 class="widget-title">Contratar personal</h3>
                                         <div class="row">
                                             <div class="col-md-12">
-                                                <button id="btn-contratar-personal" class="mainBtn">Contratar</button>
+                                                <a href="form_personal.php">
+                                                    <button id="btn-contratar-personal" class="mainBtn">Contratar</button>
+                                                </a>
+                                                
                                             </div>
                                         </div>
                                     </div> <!-- /.col-md-12 -->
                                 </div>
-                                
+
                             </div> <!-- /.content-inner -->
                         </div> <!-- /.about-us -->
                     </div> <!-- /.content-holder -->
@@ -179,26 +182,6 @@ http://www.templatemo.com/tm-402-genius
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
-    <script>
-        function initialize() {
-          var mapOptions = {
-            zoom: 15,
-            center: new google.maps.LatLng(16.832179,96.134976)
-          };
-
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-              'callback=initialize';
-          document.body.appendChild(script);
-        }
-
-    </script>
-<!-- templatemo 402 genius -->
+    
 </body>
 </html>

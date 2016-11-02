@@ -245,3 +245,12 @@ IPHONE 4-4S-5 LANDSCAPE (568x320)
 IPHONE 4-4S-5 PORTRAIT (320x568)
 ********************************/
 @media only screen and (max-width: 450px) { .templatemo_logo img { width: 100%; height: auto; } }
+
+/*------------------------------------------------------
+  previsualizar fotografia en form_personal
+--------------------------------------------------------*/
+.thumb{
+     height: 300px;
+     border: 1px solid #000;
+     margin: 10px 5px 0 0;
+}

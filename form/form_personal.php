@@ -18,6 +18,9 @@ http://www.templatemo.com/tm-402-genius
     <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700,800' rel='stylesheet' type='text/css'>
     
     <!-- CSS Bootstrap & Custom -->
+    <link rel='stylesheet prefetch' href='../css/bootstrap-theme.min.css'>
+    <link rel='stylesheet prefetch' href='../css/bootstrapValidator.min.css'>
+
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/templatemo_misc.css">
@@ -102,6 +105,18 @@ http://www.templatemo.com/tm-402-genius
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
                                 <div class="row">
+                                    <div class="row contact-form">
+                                        <div class="col-md-3" >
+                                        </div>
+                                        <div class="col-md-6" align="center">
+                                            <label for="slc-sexo">Tipo Empleado:</label>
+                                            <select id="slc-sexo[]" class="">
+                                                <option value="1">Medico</option>
+                                                <option value="2">Enfemero</option>
+                                                <option value="3">Personal de aseo</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                     <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
@@ -211,6 +226,18 @@ http://www.templatemo.com/tm-402-genius
                                             <input id="txt_salario" type="text" maxlength="60">
                                         </div>
                                     </div>
+                                    <div class="row contact-form">
+                                        <div class="col-md-3" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="file" id="files" name="files[]">
+                                            <br>
+                                            <output id="list">
+                                            </output>
+                                        </div>
+                                    </div>
+
+                                    
                                      <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
@@ -237,27 +264,8 @@ http://www.templatemo.com/tm-402-genius
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
+    <script src="../js/controlador.js"></script>
+    <script src='../js/bootstrapvalidator.min.js'></script>
 
-    <script>
-        function initialize() {
-          var mapOptions = {
-            zoom: 15,
-            center: new google.maps.LatLng(16.832179,96.134976)
-          };
-
-          var map = new google.maps.Map(document.getElementById('map-canvas'),
-              mapOptions);
-        }
-
-        function loadScript() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-              'callback=initialize';
-          document.body.appendChild(script);
-        }
-
-    </script>
-<!-- templatemo 402 genius -->
 </body>
 </html>
