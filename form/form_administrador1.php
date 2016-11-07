@@ -107,7 +107,9 @@
                                                         <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <button id="btn-ver-consultas" class="mainBtn">consultas</button>
+                                                        <a href="form_consulta.php">
+                                                            <button id="btn-ver-consultas" class="mainBtn">consultas</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>

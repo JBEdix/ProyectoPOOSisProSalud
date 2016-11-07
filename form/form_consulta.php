@@ -103,26 +103,82 @@
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
-                                    <div class="col-md-2" >
+                                    <div class="col-md-3" >
                                         <label for="txt_num_identidad">Numero de Identidad:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
                                     </div>
-                                    <div class="col-md-4" align="left">
-                                        <button class="mainBtn2">Buscar</button>
-                                    </div>                                        
+                                    <div class="col-md-2" align="left">
+                                        <button id="btn-buscar-consulta" class="mainBtn2">Buscar</button>
+                                    </div>
+                                    <div class="col-md-3" align="left">
+                                        <a href="form_expediente.php">
+                                        <button id="btn-crear-expediente" class="mainBtn2">Crear Expediente</button>
+                                        </a>
+                                    </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-md-2" >
+                                    <div class="col-md-3" >
                                         <label for="txt_nombre_paciente">Nombre del Paciente:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <input type="text" id="txt_nombre_paciente" maxlength="100" >
                                     </div>                                  
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="txt_turno_consulta">Turno Consulta:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <input type="text" id="txt_turno_consulta" maxlength="1000" disabled="true">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="txt_temperatura">Temperatura:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <input type="text" id="txt_temperatura" maxlength="1000" >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="txt_presion_artalerial">Presion Arterial:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <input type="text" id="txt_presion_artalerial" maxlength="1000" >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="txt_presion_artalerial">Presio consulta:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <input type="text" id="txt_presion_artalerial" disabled="true" value="500.00" maxlength="1000" >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="slc_doctor">Doctor:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <select id="slc_doctor" >
+                                            <option>Doctor 1</option>
+                                            <option>Doctor 2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        
+                                    </div>
+                                    <div class="col-md-4 full-row">
+                                        <button id="btn-crear-consulta" class="mainBtn">Crear consulta</button>
+                                    </div>
+                                </div>
 
-                                
+
                                 
                             </div> <!-- /.our-team -->
                         </div> <!-- /.content-inner -->

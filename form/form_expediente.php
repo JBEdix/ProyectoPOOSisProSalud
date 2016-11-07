@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Personal Clinica</title>
+    <title>Expediente</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -98,23 +98,22 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Personal</h2>
+                                <h2 class="page-title" align="left">Expediente</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
                                 <div class="row">
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6" align="center">
-                                            <label for="slc-sexo">Tipo Empleado:</label>
-                                            <select id="slc-sexo[]" class="">
-                                                <option value="1">Medico</option>
-                                                <option value="2">Enfemero</option>
-                                                <option value="3">Personal de aseo</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
+
+                                    <div class="container">                                      
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#datos" style="color: #a71e2b;"><b>Datos Personales</b></a></li>
+                                            <li><a data-toggle="tab" href="#ficha" style="color: #a71e2b;"><b>Ficha medica</b></a></li>
+                                            <li><a data-toggle="tab" href="#historial" style="color: #a71e2b; "><b>Historial Consultas</b></a></li>
+                                        </ul>
+
+                                        <div class="tab-content">
+                                            <div id="datos" class="tab-pane fade in active">
+                                                <h3>Datos Personales</h3>
+                                                <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6" align="center">
@@ -215,27 +214,20 @@
                                             <input id="txt_horario_laboral" type="text" maxlength="60">
                                         </div>
                                     </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_salario">Salario:</label>
-                                            <input id="txt_salario" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6"><!-- ingresar fotografia -->
-                                            <label for="files">Fotografia del contratante:</label>
-                                            <input type="file" id="files" name="files[]">
-                                            <br>
-                                            <output id="list">
-                                            </output>
-                                        </div>
-                                    </div>
+                                              
+                                            </div>
+                                            
+                                            <div id="ficha" class="tab-pane fade">
+                                                <h3>Ficha medica</h3>
+                                              
+                                            </div>
+                                            <div id="historial" class="tab-pane fade">
+                                                <h3>Historial Consultas</h3>
+                                                
+                                            </div>
+                                        </div><!--Tab content -->
+                                    </div><!--container del tab var -->
 
-                                    
                                      <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
