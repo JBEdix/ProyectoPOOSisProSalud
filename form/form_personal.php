@@ -261,8 +261,9 @@
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
-    <script src="js/templatemo_custom.js"></script>
     <script src="../js/controlador.js"></script>
+    <script src="js/templatemo_custom.js"></script>
+    
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

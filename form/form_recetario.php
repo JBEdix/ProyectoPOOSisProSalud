@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Conslta</title>
+    <title>Recetario</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -108,15 +108,7 @@
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
-                                    </div>
-                                    <div class="col-md-2" align="left">
-                                        <button id="btn-buscar-consulta" class="mainBtn2">Buscar</button>
-                                    </div>
-                                    <div class="col-md-3" align="left">
-                                        <a href="form_expediente.php">
-                                        <button id="btn-crear-expediente" class="mainBtn2">Crear Expediente</button>
-                                        </a>
-                                    </div>
+                                    </div>                                    
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
@@ -160,21 +152,44 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="slc_doctor">Doctor:</label>
+                                        <label for="txt_observaciones">Observaciones:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <select id="slc_doctor" >
-                                            <option>Doctor 1</option>
-                                            <option>Doctor 2</option>
-                                        </select>
+                                        <p class="full-row">
+                                            
+                                            <textarea id="txt_observaciones" rows="6"></textarea>
+                                        </p>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="txt_sintoma">Sintomas:</label>
+                                    </div>
+                                    <div id="div-sintoma" class="col-md-4" align="left"></div>
+                                    <div class="col-md-4" align="left">
+                                        <button class="add mainBtn2" id="add-sintoma">Agregar Sintoma</button>
+                                    </div>                                    
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="slc_medicamento">Medicamentos:</label>
+                                    </div>
+                                    <div id="div-medicamento" class="col-md-4" align="left"></div>
+                                    <div class="col-md-4" align="left">
+                                        <button class="add mainBtn2" id="add-medicamento">Agregar Medicamento</button>
+                                    </div>                                    
+                                </div>
+                                
+                                
+                                
+
                                 <div class="row">
                                     <div class="col-md-3" >
                                         
                                     </div>
-                                    <div class="col-md-4 full-row">
-                                        <button id="btn-crear-consulta" class="mainBtn">Crear consulta</button>
+                                    <div class="col-md-4">
+                                        <button id="btn-crear-consulta" class="mainBtn">Crear Recetario</button>
                                     </div>
                                 </div>
 
@@ -195,8 +210,48 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
-    
+
     <script src='../js/bootstrapvalidator.min.js'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#add-sintoma").click(function() {
+                var intId = $("#div-sintoma div").length + 1;
+                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
+                
+                var fName = $("<input type=\"text\" class=\"fieldname\" style=\" width:230px\" />");
+                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
+
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                
+                fieldWrapper.append(fName);
+                fieldWrapper.append(removeButton);
+                $("#div-sintoma").append(fieldWrapper);
+            });
+
+            $("#add-medicamento").click(function() {
+                var intId = $("#div-medicamento div").length + 1;
+                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
+                
+                
+                var fType = $("<select class=\"fieldtype\"><option value=\"\">Medicamento 1</option><option value=\"\">Medicamento 2</option><option value=\"\">Medicamento 3</option></select>");
+                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
+
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                
+                fieldWrapper.append(fType);
+                fieldWrapper.append(removeButton);
+                $("#div-medicamento").append(fieldWrapper);
+            });
+
+
+        });
+
+    </script>
 
 </body>
 </html>

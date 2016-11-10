@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Conslta</title>
+    <title>Reporte Medicos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -98,87 +98,54 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Consulta</h2>
+                                <h2 class="page-title" align="left">Medicos</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
+                            <div class="table-responsive">
+                                <table class="table table-hover table-striped ">
+                                    <tr>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Fecha Nacimiento</th>
+                                        <th>Sexo</th>
+                                    
+                                        <th>Numero de Identidad</th>
+                                        <th>Pais</th>
+                                        <th>Departamento</th>
+                                    
+                                        <th>Direccion</th>
+                                        <th>Celular</th>
+                                        <th>E-Mail</th>
+                                    
+                                        <th>Fecha Ingreso</th>
+                                        <th>Horario Laboral</th>
+                                        <th>Salario</th>
+                                    
+                                        <th>Fotografia del contratante</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Jheral</td>
+                                        <td>Blanco</td>
+                                        <td>14/01/1995</td>
+                                        <td>Masculino</td>
+                                    
+                                        <td>0614-1995-00039</td>
+                                        <td>Honduras</td>
+                                        <td>Francisco Morazan</td>
+                                    
+                                        <td>Col. El Pedregal</td>
+                                        <td>9999-9999</td>
+                                        <td>jheral.blanco@gmail.com</td>
+                                    
+                                        <td>12/12/2012</td>
+                                        <td>Lunes a viernes</td>
+                                        <td>45,000.00</td>
+                                    
+                                        <td>Foto</td>
+                                    </tr>
+                                </table>
 
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_num_identidad">Numero de Identidad:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
-                                    </div>
-                                    <div class="col-md-2" align="left">
-                                        <button id="btn-buscar-consulta" class="mainBtn2">Buscar</button>
-                                    </div>
-                                    <div class="col-md-3" align="left">
-                                        <a href="form_expediente.php">
-                                        <button id="btn-crear-expediente" class="mainBtn2">Crear Expediente</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_nombre_paciente">Nombre del Paciente:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_nombre_paciente" maxlength="100" >
-                                    </div>                                  
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_turno_consulta">Turno Consulta:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_turno_consulta" maxlength="1000" disabled="true">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_temperatura">Temperatura:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_temperatura" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presion Arterial:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presio consulta:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" disabled="true" value="500.00" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="slc_doctor">Doctor:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <select id="slc_doctor" >
-                                            <option>Doctor 1</option>
-                                            <option>Doctor 2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        
-                                    </div>
-                                    <div class="col-md-4 full-row">
-                                        <button id="btn-crear-consulta" class="mainBtn">Crear consulta</button>
-                                    </div>
-                                </div>
-
-
+                            </div>
                                 
                             </div> <!-- /.our-team -->
                         </div> <!-- /.content-inner -->
@@ -195,8 +162,48 @@
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
-    
+
     <script src='../js/bootstrapvalidator.min.js'></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#add-sintoma").click(function() {
+                var intId = $("#div-sintoma div").length + 1;
+                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
+                
+                var fName = $("<input type=\"text\" class=\"fieldname\" style=\" width:230px\" />");
+                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
+
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                
+                fieldWrapper.append(fName);
+                fieldWrapper.append(removeButton);
+                $("#div-sintoma").append(fieldWrapper);
+            });
+
+            $("#add-medicamento").click(function() {
+                var intId = $("#div-medicamento div").length + 1;
+                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
+                
+                
+                var fType = $("<select class=\"fieldtype\"><option value=\"\">Medicamento 1</option><option value=\"\">Medicamento 2</option><option value=\"\">Medicamento 3</option></select>");
+                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
+
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                
+                fieldWrapper.append(fType);
+                fieldWrapper.append(removeButton);
+                $("#div-medicamento").append(fieldWrapper);
+            });
+
+
+        });
+
+    </script>
 
 </body>
 </html>

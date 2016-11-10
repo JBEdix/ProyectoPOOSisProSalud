@@ -102,6 +102,30 @@
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
                                 <div class="row">
+                                    <div class="row">
+                                        <div class="col-md-3" >
+                                            <label for="txt_nombre">Nombre:</label>
+                                        </div>
+                                        <div class="col-md-4 full-row" align="left">
+                                            <input type="text" id="txt_nombre" maxlength="100" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3" >
+                                            <label for="txt_apellido">Apellido:</label>
+                                        </div>
+                                        <div class="col-md-4 full-row" align="left">
+                                            <input type="text" id="txt_apellido" maxlength="100" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3" >
+                                            <label for="txt_num_identidad">Numero de Identidad:</label>
+                                        </div>
+                                        <div class="col-md-4 full-row" align="left">
+                                            <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
+                                        </div>
+                                    </div>
 
                                     <div class="container">                                      
                                         <ul class="nav nav-tabs">
@@ -114,117 +138,174 @@
                                             <div id="datos" class="tab-pane fade in active">
                                                 <h3>Datos Personales</h3>
                                                 <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6" align="center">
-                                            <label for="txt_nombre">Nombre:</label>
-                                            <input id="txt_nombre" type="text" maxlength="100">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_apellido">Apellido:</label>
-                                            <input id="txt_apellido" type="text" maxlength="100">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="date_fecha_nac">Fecha Nacimiento:</label>
-                                            <div><input type="date" id="date_fecha_nac"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6" >
-                                            <label for="slc-sexo">Sexo:</label>
-                                            <select id="slc-sexo[]" class="">
-                                                <option value="Masculino">Masculino</option>
-                                                <option value="Femenino">Femenino</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_num_identidad">Numero de Identidad:</label>
-                                            <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
-                                        </div>                                        
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="subject-id">Pais:</label>
-                                            <input id="" ="txt_pais" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                    <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_pais">Departamento:</label>
-                                            <input id="txt_pais" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                    <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <p class="full-row">
-                                                <label for="txt_direccion">Direccion:</label>
-                                                <textarea name="txt_direccion" id="txt_direccion" rows="6"></textarea>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_celular">Celular:</label>
-                                            <input id="txt_celular" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_email">E-Mail:</label>
-                                            <input id="txt_email" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="date_fecha_ing">Fecha Ingreso:</label>
-                                            <div><input type="date" id="date_fecha_ing"></div>
-                                        </div>
-                                    </div>
-                                    <div class="row contact-form">
-                                        <div class="col-md-3" >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="txt_horario_laboral">Horario Laboral:</label>
-                                            <input id="txt_horario_laboral" type="text" maxlength="60">
-                                        </div>
-                                    </div>
-                                              
-                                            </div>
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="date_fecha_nac">Fecha Nacimiento:</label>
+                                                        <div><input type="date" id="date_fecha_nac"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6" >
+                                                        <label for="slc-sexo">Sexo:</label>
+                                                        <select id="slc-sexo[]" class="">
+                                                            <option value="Masculino">Masculino</option>
+                                                            <option value="Femenino">Femenino</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="subject-id">Pais:</label>
+                                                        <input id="" ="txt_pais" type="text" maxlength="60">
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txt_pais">Departamento:</label>
+                                                        <input id="txt_pais" type="text" maxlength="60">
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <p class="full-row">
+                                                            <label for="txt_direccion">Direccion:</label>
+                                                            <textarea name="txt_direccion" id="txt_direccion" rows="6"></textarea>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txt_celular">Celular:</label>
+                                                        <input id="txt_celular" type="text" maxlength="60">
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txt_email">E-Mail:</label>
+                                                        <input id="txt_email" type="text" maxlength="60">
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="date_fecha_ing">Fecha Ingreso:</label>
+                                                        <div><input type="date" id="date_fecha_ing"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row contact-form">
+                                                    <div class="col-md-3" >
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="txt_horario_laboral">Horario Laboral:</label>
+                                                        <input id="txt_horario_laboral" type="text" maxlength="60">
+                                                    </div>
+                                                </div>
+                                                          
+                                            </div><!-- Datos Personales -->
                                             
                                             <div id="ficha" class="tab-pane fade">
-                                                <h3>Ficha medica</h3>
-                                              
-                                            </div>
+                                                <h3 style="padding:  30px 0px; ">Ficha medica</h3>
+                                                <div class="row">
+                                                    <div class="col-md-2" >
+                                                        <label for="txt_peso">Peso:</label>
+                                                    </div>
+                                                    <div class="col-md-4 full-row" align="left">
+                                                        <input type="text" id="txt_peso" maxlength="5" >
+                                                    </div>
+                                                    <div class="col-md-2" >
+                                                        <label for="txt_altura">Altura:</label>
+                                                    </div>
+                                                    <div class="col-md-4 full-row" align="left">
+                                                        <input type="text" id="txt_altura" maxlength="5" >
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <label for="txt_presion">Presion:</label>
+                                                    </div>
+                                                    <div class="col-md-4 full-row" align="left">
+                                                        <input type="text" id="txt_presion" maxlength="5">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <label for="slc_grupo_sanguineo">Grupo Sanguineo:</label>
+                                                    </div>
+                                                    <div class="col-md-2 full-row" align="left">
+                                                        <select style="width: 100px;" id="slc_grupo_sanguineo">
+                                                            <option value="O+">O+</option>
+                                                            <option value="O-">O-</option>
+                                                            <option value="A+">A+</option>
+                                                            <option value="A-">A-</option>
+                                                            <option value="B+">B+</option>
+                                                            <option value="B-">B-</option>
+                                                            <option value="AB+">AB+</option>
+                                                            <option value="AB-">AB-</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="slc_anteojos">Anteojos:</label>
+                                                    </div>
+                                                    <div class="col-md-2 full-row" align="left">
+                                                        <select style="width: 100px;" id="slc_anteojos">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="slc_accidentes">Accidentes:</label>
+                                                    </div>
+                                                    <div class="col-md-2 full-row" align="left">
+                                                        <select style="width: 100px;" id="slc_accidentes">
+                                                            <option value="Si">Si</option>
+                                                            <option value="No">No</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2"></div>
+                                                    <div class="col-md-8" >
+                                                        <p class="full-row">
+                                                            <label for="txt_observaciones">Observaciones:</label>
+                                                            <textarea id="txt_observaciones" rows="6"></textarea>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <label for="slc_padecimiento">Padecimiento:</label>
+                                                    </div>
+                                                    <div id="div-padecimiento" class="col-md-4" align="left">
+                                                        
+                                                    </div>
+                                                    <div class="col-md-4" align="left">
+                                                        <button class="add mainBtn2" id="add">Agregar Padecimiento</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div><!-- ficha medica -->
+                                            
+                                            
+                                            
                                             <div id="historial" class="tab-pane fade">
                                                 <h3>Historial Consultas</h3>
                                                 
-                                            </div>
+                                            </div><!-- Historial Consultas -->
                                         </div><!--Tab content -->
                                     </div><!--container del tab var -->
 
@@ -248,13 +329,33 @@
     </div> <!-- /.container -->
 <!-- /.main-content -->
 
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function() {
+                var intId = $("#div-padecimiento div").length + 1;
+                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
+                
+                var fType = $("<select class=\"fieldtype\"><option value=\"\">padeciemiento 1</option><option value=\"\">padeciemiento 2</option><option value=\"\">padeciemiento 3</option></select>");
+                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
+
+                removeButton.click(function() {
+                    $(this).parent().remove();
+                });
+                
+                fieldWrapper.append(fType);
+                fieldWrapper.append(removeButton);
+                $("#div-padecimiento").append(fieldWrapper);
+            });
+        });
+    </script>
+
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
-    <script src="../js/controlador.js"></script>
+    
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

@@ -104,7 +104,9 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="col-md-6">
-                                                        <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
+                                                        <a href="form_recetario.php">
+                                                            <button id="btn-ver-recetarios" class="mainBtn">Recetarios</button>
+                                                        </a>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <a href="form_consulta.php">
@@ -141,7 +143,10 @@
                                         <h3 class="widget-title">Personal Cinica</h3>
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <button id="btn-ver-medicos" class="mainBtn">medicos</button>
+                                                <a href="form_reporte_medicos.php">
+                                                    <button id="btn-ver-medicos" class="mainBtn">medicos</button>
+                                                </a>
+                                                
                                             </div>
                                             <div class="col-md-4">
                                                 <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
