@@ -106,22 +106,22 @@
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div class="well">
                                             <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                            <b style="color: black;">Nombre enfermera</b><br>
+                                            <a href="form_detalle_enfermeras.php">ver detalles</a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div class="well">
                                             <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                            <b style="color: black;">Nombre enfermera</b><br>
+                                            <a href="form_detalle_enfermeras.php">ver detalles</a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div class="well">
                                             <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                            <b style="color: black;">Nombre enfermera</b><br>
+                                            <a href="form_detalle_enfermeras.php">ver detalles</a>
                                         </div>
                                     </div>
                                 </div>

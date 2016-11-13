@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Recetario</title>
+    <title>Receta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -98,101 +98,48 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Consulta</h2>
+                                <h2 class="page-title" align="left">Receta</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_num_identidad">Numero de Identidad:</label>
+                                        <label for="txt_nombre_receta">Nombre de la receta:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
-                                    </div>                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_nombre_paciente">Nombre del Paciente:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_nombre_paciente" maxlength="100" >
+                                        <input type="text" id="txt_nombre_receta" maxlength="100" >
                                     </div>                                  
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_turno_consulta">Turno Consulta:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_turno_consulta" maxlength="1000" disabled="true">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_temperatura">Temperatura:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_temperatura" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presion Arterial:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presio consulta:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" disabled="true" value="500.00" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_observaciones">Observaciones:</label>
+                                        <label for="txt_descripcion">Descripcion:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <p class="full-row">                                            
-                                            <textarea id="txt_observaciones" rows="6"></textarea>
+                                            <textarea id="txt_descripcion" rows="6"></textarea>
                                         </p>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_sintomas">Sintomas:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <p class="full-row">                                            
-                                            <textarea id="txt_sintomas" rows="6"></textarea>
-                                        </p>
-                                    </div>                                   
-                                </div>
-                                <br>
+                                
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <label for="receta">Receta:</label>
+                                        <label for="receta">Medicamento:</label>
                                     </div>
-                                    <div id="div-receta" class="col-md-4" align="left"></div>
+                                    <div id="div-medicamento" class="col-md-4" align="left"></div>
                                     <div class="col-md-4" align="left">
-                                        <button class="add mainBtn2" id="add-receta">Agregar Receta</button>
-                                        <a href="form_receta.php">
-                                            <button class="add mainBtn3" id="crear-receta">Crear Receta</button>
+                                        <button class="add mainBtn2" id="add-medicamento">Agregar Medicamento</button>
+                                        <a href="form_medicamento.php">
+                                            <button class="add mainBtn3" id="crear-medicamento">Crear Medicamento</button>
                                         </a>
                                     </div>                                    
                                 </div>
-                                
-                                
-                                
 
                                 <div class="row">
                                     <div class="col-md-3" >
                                         
                                     </div>
                                     <div class="col-md-4">
-                                        <button id="btn-crear-consulta" class="mainBtn">Crear Recetario</button>
+                                        <button id="btn-guardar-receta" class="mainBtn">Guardar receta</button>
                                     </div>
                                 </div>
 
@@ -219,12 +166,12 @@
     <script type="text/javascript">
         $(document).ready(function(){
             
-            $("#add-receta").click(function() {
-                var intId = $("#div-receta div").length + 1;
+            $("#add-medicamento").click(function() {
+                var intId = $("#div-medicamento div").length + 1;
                 var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
                 
                 
-                var fType = $("<select class=\"fieldtype\"><option value=\"\">Receta 1</option><option value=\"\">Receta 2</option><option value=\"\">Receta 3</option></select>");
+                var fType = $("<select class=\"fieldtype\"><option value=\"\">Medicamento 1</option><option value=\"\">Medicamento 2</option><option value=\"\">Medicamento 3</option></select>");
                 var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
 
                 removeButton.click(function() {
@@ -233,13 +180,13 @@
                 
                 fieldWrapper.append(fType);
                 fieldWrapper.append(removeButton);
-                $("#div-receta").append(fieldWrapper);
+                $("#div-medicamento").append(fieldWrapper);
             });
 
 
         });
-
     </script>
+    
 
 </body>
 </html>

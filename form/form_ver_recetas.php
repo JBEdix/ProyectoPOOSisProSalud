@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Reporte Medicos</title>
+    <title>Ver Recetas</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -98,30 +98,60 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Medicos</h2>
+                                <h2 class="page-title" align="left">Ver Recetas</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div style="color: black;" class="well">
+                                            <b >Nombre receta</b><br>
+                                            <p>medicamento 1</p>
+                                            <p>medicamento 2</p>
+                                            <p>medicamento 3</p>
+                                            <p>medicamento 4</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a href="#">eliminar </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <a href="#">Editar</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div style="color: black;" class="well">
+                                            <b >Nombre receta</b><br>
+                                            <p>medicamento 1</p>
+                                            <p>medicamento 2</p>
+                                            <p>medicamento 3</p>
+                                            <p>medicamento 4</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a href="#">eliminar </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <a href="#">Editar</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div style="color: black;" class="well">
+                                            <b >Nombre receta</b><br>
+                                            <p>medicamento 1</p>
+                                            <p>medicamento 2</p>
+                                            <p>medicamento 3</p>
+                                            <p>medicamento 4</p>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <a href="#">eliminar </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <a href="#">Editar</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

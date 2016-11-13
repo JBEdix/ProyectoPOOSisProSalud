@@ -120,20 +120,60 @@
                                 </div>
 
                                 <div class="our-team page-header-2">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3 class="widget-title">Medicamentos/ Recetas</h3>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="form_recetas.php">
+                                                <button id="btn-crear-recetas" class="mainBtn">Crear Recetas</button>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="form_ver_recetas.php">
+                                                <button id="btn-ver-consultas" class="mainBtn">Ver Recetas</button>
+                                            </a>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <a href="form_medicamento.php">
+                                                <button class="mainBtn" id="btn-medicamentes">Medicamentos</button>
+                                            </a>
+                                        </div> <!-- /.col-md-3 -->
+
+                                    </div> <!-- /.row -->
+                                </div>
+                                <div class="our-team page-header-2">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3 class="widget-title">Expedientes</h3>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a href="form_ver_expedientes.php">
+                                                <button class="mainBtn" id="Ver-pacientes-dia">Expedientes</button>
+                                            </a>
+                                        </div> <!-- /.col-md-3 -->
+                                        <div class="col-md-6">
+                                            <a href="form_expediente.php">
+                                                <button id="btn-crear-expediente" class="mainBtn">Crear Expediente</button>
+                                            </a>
+                                        </div>
+
+                                    </div> <!-- /.row -->
+                                </div>
+
+
+
+                                <div class="our-team page-header-2">
                                 <h3 class="widget-title">Estadisticas</h3>
                                     <div class="row">
-                                        <div class="col-md-3">
+                                        <div class="col-md-6">
                                             <button class="mainBtn" id="btn-pacientes-dia">Pacientes del dia</button>
                                         </div> <!-- /.col-md-3 -->
-                                        <div class="col-md-3">
-                                            <button class="mainBtn" id="btn-medicamentes">Medicamentos</button>
-                                        </div> <!-- /.col-md-3 -->
-                                        <div class="col-md-3">
+                                        
+                                        <div class="col-md-6">
                                             <button class="mainBtn" id="Ver-pacientes-dia">Estadisticas</button>
                                         </div> <!-- /.col-md-3 -->
-                                        <div class="col-md-3">
-                                            <button class="mainBtn" id="Ver-pacientes-dia">Expedientes</button>
-                                        </div> <!-- /.col-md-3 -->
+                                        
                                     </div> <!-- /.row -->
                                 </div>
 
@@ -149,10 +189,14 @@
                                                 
                                             </div>
                                             <div class="col-md-4">
-                                                <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
+                                                <a href="form_reporte_enfermeras.php">
+                                                    <button id="btn-ver-enfermeras" class="mainBtn">enfermeras</button>
+                                                </a>
                                             </div>
                                             <div class="col-md-4">
-                                                <button id="btn-ver-personal" class="mainBtn">Personal de aseo</button>
+                                                <a href="form_reporte_personal_aseo.php">
+                                                    <button id="btn-ver-personal" class="mainBtn">Personal de aseo</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div> <!-- /.col-md-7 -->

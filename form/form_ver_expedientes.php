@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Reporte Medicos</title>
+    <title>Ver Expedientes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -98,30 +98,30 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Medicos</h2>
+                                <h2 class="page-title" align="left">Ver Expedientes</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div class="well" style="color: black;">
+                                            <b>Nombre Paciente</b><br>
+                                            <b>Numero identidad:0801-1995-00098</b><br>
+                                            <a href="form_detalle_expediente.php">ver detalles</a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div class="well" style="color: black;">    
+                                            <b>Nombre Paciente</b><br>
+                                            <b>Numero identidad: 0801-1995-00098</b><br>
+                                            <a href="form_detalle_expediente.php">ver detalles</a>
                                         </div>
                                     </div>
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
+                                        <div class="well" style="color: black;">
+                                            <b>Nombre Paciente:</b><br>
+                                            <b>Numero identidad: 0801-1995-00098</b><br>
+                                            <a href="form_detalle_expediente.php">ver detalles</a>
                                         </div>
                                     </div>
                                 </div>

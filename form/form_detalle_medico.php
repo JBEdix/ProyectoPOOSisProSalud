@@ -103,27 +103,17 @@
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
-                                        </div>
+                                    <div class="col-md-3">
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
-                                        </div>
+                                    <div class="col-md-6">
+                                        <img src="images/team1.jpg" class="image-responsive">    
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
-                                        </div>
+                                    <div class="col-md-3">
                                     </div>
+                                    <div class="col-md-6">
+                                        toda la informacion del medico
+                                    </div>
+                                    
                                 </div>
                                     
                                     
@@ -146,6 +136,7 @@
     <script src="js/templatemo_custom.js"></script>
 
     <script src='../js/bootstrapvalidator.min.js'></script>
+
 
 </body>
 </html>

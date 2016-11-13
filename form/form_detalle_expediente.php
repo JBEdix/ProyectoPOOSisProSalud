@@ -330,7 +330,6 @@
     </div> <!-- /.container -->
 <!-- /.main-content -->
 
-
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/jquery.mixitup.min.js"></script>
