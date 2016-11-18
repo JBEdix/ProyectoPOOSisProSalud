@@ -124,17 +124,13 @@
                                         <div class="col-md-12">
                                             <h3 class="widget-title">Medicamentos/ Recetas</h3>
                                         </div>
-                                        <div class="col-md-4">
-                                            <a href="form_recetas.php">
-                                                <button id="btn-crear-recetas" class="mainBtn">Crear Recetas</button>
-                                            </a>
-                                        </div>
-                                        <div class="col-md-4">
+                                        
+                                        <div class="col-md-6">
                                             <a href="form_ver_recetas.php">
                                                 <button id="btn-ver-consultas" class="mainBtn">Ver Recetas</button>
                                             </a>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <a href="form_medicamento.php">
                                                 <button class="mainBtn" id="btn-medicamentes">Medicamentos</button>
                                             </a>
@@ -158,22 +154,6 @@
                                             </a>
                                         </div>
 
-                                    </div> <!-- /.row -->
-                                </div>
-
-
-
-                                <div class="our-team page-header-2">
-                                <h3 class="widget-title">Estadisticas</h3>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <button class="mainBtn" id="btn-pacientes-dia">Pacientes del dia</button>
-                                        </div> <!-- /.col-md-3 -->
-                                        
-                                        <div class="col-md-6">
-                                            <button class="mainBtn" id="Ver-pacientes-dia">Estadisticas</button>
-                                        </div> <!-- /.col-md-3 -->
-                                        
                                     </div> <!-- /.row -->
                                 </div>
 

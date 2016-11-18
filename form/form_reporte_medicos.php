@@ -101,8 +101,9 @@
                                 <h2 class="page-title" align="left">Medicos</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
+                            
 
-                                <div class="row">
+                                <div id="div_tarjetas" class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div class="well">
                                             <img src="images/team1.jpg" class="img-responsive">
@@ -110,22 +111,8 @@
                                             <a href="form_detalle_medico.php">ver detalles</a>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well">
-                                            <img src="images/team1.jpg" class="img-responsive">
-                                            <b style="color: black;">Nombre doctor</b><br>
-                                            <a href="form_detalle_medico.php">ver detalles</a>
-                                        </div>
-                                    </div>
-                                </div>
                                     
+                                </div>  
                                     
 
 
@@ -145,6 +132,7 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
 
+    <script src="../js/js_form/js_form_reporte_medicos.js"></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

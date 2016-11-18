@@ -106,11 +106,9 @@
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6" align="center">
-                                            <label for="slc-sexo">Tipo Empleado:</label>
-                                            <select id="slc-sexo[]" class="">
-                                                <option value="1">Medico</option>
-                                                <option value="2">Enfemero</option>
-                                                <option value="3">Personal de aseo</option>
+                                            <label for="slc_tipo_usuario">Tipo Empleado:</label>
+                                            <select id="slc_tipo_usuario" class="">
+                                                
                                             </select>
                                         </div>
                                     </div>
@@ -142,8 +140,8 @@
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6" >
-                                            <label for="slc-sexo">Sexo:</label>
-                                            <select id="slc-sexo[]" class="">
+                                            <label for="slc_sexo">Sexo:</label>
+                                            <select id="slc_sexo" class="">
                                                 <option value="Masculino">Masculino</option>
                                                 <option value="Femenino">Femenino</option>
                                             </select>
@@ -161,16 +159,18 @@
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="subject-id">Pais:</label>
-                                            <input id="" ="txt_pais" type="text" maxlength="60">
+                                            <label for="slc_departamento">Departamento:</label>
+                                            <select id="slc_departamento">
+                                                <option value=" "> </option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row contact-form">
                                     <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="txt_pais">Departamento:</label>
-                                            <input id="txt_pais" type="text" maxlength="60">
+                                            <label for="slc_ciudad">Ciudad:</label>
+                                            <select id="slc_ciudad"></select>
                                         </div>
                                     </div>
                                     <div class="row contact-form">
@@ -211,16 +211,26 @@
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="txt_horario_laboral">Horario Laboral:</label>
-                                            <input id="txt_horario_laboral" type="text" maxlength="60">
+                                            <label for="txt_usuario">Usuario:</label>
+                                            <input id="txt_usuario" type="text" maxlength="60">
                                         </div>
                                     </div>
                                     <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
                                         <div class="col-md-6">
-                                            <label for="txt_salario">Salario:</label>
-                                            <input id="txt_salario" type="text" maxlength="60">
+                                            <label for="txt_contrasena">contraseña:</label>
+                                            <input id="txt_contrasena" type="password" maxlength="60">
+                                        </div>
+                                    </div>
+                                    <div class="row contact-form">
+                                        <div class="col-md-3" >
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="slc_salario">Salario:</label>
+                                            <select id="slc_salario">
+                                                
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="row contact-form">
@@ -228,21 +238,36 @@
                                         </div>
                                         <div class="col-md-6"><!-- ingresar fotografia -->
                                             <label for="files">Fotografia del contratante:</label>
-                                            <input type="file" id="files" name="files[]">
+                                                <form method="post" id="formulario" enctype="multipart/form-data">
+                                                <input id="foto-contratante" type="file" name="file">
+                                                </form>
                                             <br>
-                                            <output id="list">
-                                            </output>
+                                            <div id="respuesta"></div>
                                         </div>
                                     </div>
-
                                     
-                                     <div class="row contact-form">
+                                    <div class="row contact-form">
                                         <div class="col-md-3" >
                                         </div>
-                                        <div class="col-md-6">
-                                            <button class="mainBtn" >
+                                        <div id="div-res" class="col-md-6">
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row contact-form">
+                                        <div class="col-md-3" >
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button id="btn_guardar" class="mainBtn" >
                                                 Guardar
                                             </button>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="form_personal.php">
+                                                <button id="btn_nuevo" class="mainBtn" >
+                                                Nuevo
+                                                </button>
+                                            </a>                                            
                                         </div>
                                     </div>
 
@@ -260,11 +285,10 @@
 
     <script src="js/jquery.mixitup.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.lightbox.js"></script>
-    <script src="../js/controlador.js"></script>
+    <script src="js/jquery.lightbox.js"></script>    
     <script src="js/templatemo_custom.js"></script>
     
     <script src='../js/bootstrapvalidator.min.js'></script>
-
+    <script src="../js/js_form/js_form_personal.js"></script>
 </body>
 </html>

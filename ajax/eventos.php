@@ -1,21 +1,26 @@
 <?php
-	$tipoUsuario = "";
-
-
-
-	if (($_POST["txt-usuario"]== "") || ($_POST["txt-contraseña"]=="")) {
-		$tipoUsuario = 0;
-	}
-	else{
-		$tipoUsuario = mt_rand(1,3);		
-	}
-
+	include_once("../class/class_conexion.php");
 	
-
-
-	switch ($tipoUsuario) {
-		case 1: //Usuario Administrador
-			echo "1";
+	switch ($_GET["accion"]) {
+		case 1: 
+			$conexion = new Conexion();
+			$sql = sprintf("SELECT id_empleado, usuario,  contrasena, id_tipo_usuario 
+					FROM tbl_empleado 
+					WHERE usuario = '%s'
+					AND contrasena = '%s'",
+					stripslashes($_POST["usuario"]),
+					stripslashes($_POST["contraseña"])
+				);
+			$resultado = $conexion->ejecutarInstruccion($sql);
+			$c = 0;
+			if ($conexion->cantidadRegistros($resultado)) {
+			 	echo "1";
+			 } 
+			else {
+				echo "0";
+			}
+			$conexion->cerrarConexion();
+			
 			break;
 		case 2: //Usuario doctor
 			echo "2";

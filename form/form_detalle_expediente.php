@@ -158,14 +158,6 @@
                                                 </div>
                                                 
                                                 <div class="row contact-form">
-                                                    <div class="col-md-3" >
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="subject-id">Pais:</label>
-                                                        <input id="" ="txt_pais" type="text" maxlength="60">
-                                                    </div>
-                                                </div>
-                                                <div class="row contact-form">
                                                 <div class="col-md-3" >
                                                     </div>
                                                     <div class="col-md-6">

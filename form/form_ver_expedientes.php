@@ -102,7 +102,7 @@
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
-                                <div class="row">
+                                <div class="row" id="div_tarjetas">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div class="well" style="color: black;">
                                             <b>Nombre Paciente</b><br>
@@ -110,20 +110,7 @@
                                             <a href="form_detalle_expediente.php">ver detalles</a>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well" style="color: black;">    
-                                            <b>Nombre Paciente</b><br>
-                                            <b>Numero identidad: 0801-1995-00098</b><br>
-                                            <a href="form_detalle_expediente.php">ver detalles</a>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div class="well" style="color: black;">
-                                            <b>Nombre Paciente:</b><br>
-                                            <b>Numero identidad: 0801-1995-00098</b><br>
-                                            <a href="form_detalle_expediente.php">ver detalles</a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                     
                                     
@@ -145,6 +132,7 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
 
+    <script src="../js/js_form/js_form_ver_expedientes.js"></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

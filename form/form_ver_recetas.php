@@ -102,7 +102,7 @@
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
-                                <div class="row">
+                                <div id="div_res" class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
                                         <div style="color: black;" class="well">
                                             <b >Nombre receta</b><br>
@@ -111,50 +111,14 @@
                                             <p>medicamento 3</p>
                                             <p>medicamento 4</p>
                                             <div class="row">
-                                                <div class="col-md-6">
-                                                    <a href="#">eliminar </a>
-                                                </div>
-                                                <div class="col-md-6">
+                                                
+                                                <div class="col-*-12">
                                                     <a href="#">Editar</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div style="color: black;" class="well">
-                                            <b >Nombre receta</b><br>
-                                            <p>medicamento 1</p>
-                                            <p>medicamento 2</p>
-                                            <p>medicamento 3</p>
-                                            <p>medicamento 4</p>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <a href="#">eliminar </a>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <a href="#">Editar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                                        <div style="color: black;" class="well">
-                                            <b >Nombre receta</b><br>
-                                            <p>medicamento 1</p>
-                                            <p>medicamento 2</p>
-                                            <p>medicamento 3</p>
-                                            <p>medicamento 4</p>
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <a href="#">eliminar </a>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <a href="#">Editar</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                    
                                     
                                     
 
@@ -175,6 +139,7 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
 
+    <script src='../js/js_form/js_form_ver_recetas.js'></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

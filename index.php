@@ -16,7 +16,7 @@
             <fieldset>
                 <legend>Iniciar Sesion</legend>
                 <div class="form-group">
-                    <label class="col-md-4 control-label">Usuario</label>  
+                    <label class="col-md-4 control-label">Correo</label>  
                     <div class="col-md-4 inputGroupContainer">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -39,6 +39,7 @@
                     No deben quedar campos en blanco.
                     
                 </div>
+                <div id="res"></div>
 
                 <div class="form-group">
                     <label class="col-md-4 control-label"></label>

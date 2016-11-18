@@ -98,24 +98,25 @@
                         
                         <div id="menu-1" class="homepage">
                             <div class="page-header">
-                                <h2 class="page-title" align="left">Consulta</h2>
+                                <h2 class="page-title" align="left">Recetario</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
 
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_num_identidad">Numero de Identidad:</label>
+                                        <label for="slc_consulta">Elegir Consulta:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
+                                        <select id="slc_consulta" ></select>
                                     </div>                                    
                                 </div>
+                                <br>
                                 <div class="row">
                                     <div class="col-md-3" >
                                         <label for="txt_nombre_paciente">Nombre del Paciente:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_nombre_paciente" maxlength="100" >
+                                        <input type="text" id="txt_nombre_paciente" disabled="true" maxlength="100" >
                                     </div>                                  
                                 </div>
                                 <div class="row">
@@ -123,7 +124,7 @@
                                         <label for="txt_turno_consulta">Turno Consulta:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_turno_consulta" maxlength="1000" disabled="true">
+                                        <input type="text" id="txt_turno_consulta" disabled="true" maxlength="1000" disabled="true">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -131,49 +132,45 @@
                                         <label for="txt_temperatura">Temperatura:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_temperatura" maxlength="1000" >
+                                        <input type="text" id="txt_temperatura" disabled="true" maxlength="1000" >
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presion Arterial:</label>
+                                        <label for="txt_presion_arterial">Presion Arterial:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" maxlength="1000" >
+                                        <input type="text" id="txt_presion_arterial" disabled="true" maxlength="1000" >
                                     </div>
-                                </div>
+                                </div>                                
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presio consulta:</label>
-                                    </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" disabled="true" value="500.00" maxlength="1000" >
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_observaciones">Observaciones:</label>
+                                        <label for="txt_diagnostico">Diagnostico Final:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <p class="full-row">                                            
-                                            <textarea id="txt_observaciones" rows="6"></textarea>
+                                            <textarea id="txt_diagnostico" rows="6"></textarea>
                                         </p>
                                     </div>
                                 </div>
+                                
+                                <br>
                                 <div class="row">
-                                    <div class="col-md-3" >
-                                        <label for="txt_sintomas">Sintomas:</label>
+                                    <div class="col-md-3">
+                                        <label for="sintoma">Sintomas:</label>
                                     </div>
-                                    <div class="col-md-4 full-row" align="left">
-                                        <p class="full-row">                                            
-                                            <textarea id="txt_sintomas" rows="6"></textarea>
-                                        </p>
-                                    </div>                                   
+                                    <div id="div-sintoma" class="col-md-4" align="left"></div>
+                                    <div class="col-md-4" align="left">
+                                        <button class="add mainBtn2" id="add-sintoma">Agregar Sintoma</button>
+                                        <a href="">
+                                            <button class="add mainBtn3" id="crear-sintoma">Crear Sintoma</button>
+                                        </a>
+                                    </div>                                    
                                 </div>
                                 <br>
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <label for="receta">Receta:</label>
+                                        <label for="receta">Recetas:</label>
                                     </div>
                                     <div id="div-receta" class="col-md-4" align="left"></div>
                                     <div class="col-md-4" align="left">
@@ -185,14 +182,25 @@
                                 </div>
                                 
                                 
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        
+                                    </div>
+                                    <div id="div_res" class="col-md-4">
+                                        
+                                    </div>
+                                </div>
                                 
 
                                 <div class="row">
                                     <div class="col-md-3" >
                                         
                                     </div>
-                                    <div class="col-md-4">
-                                        <button id="btn-crear-consulta" class="mainBtn">Crear Recetario</button>
+                                    <div class="col-md-3">
+                                        <button id="btn_crear_recetario" class="mainBtn">Crear Recetario</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id="btn_nuevo_recetario" class="mainBtn">Nuevo Recetario</button>
                                     </div>
                                 </div>
 
@@ -214,32 +222,9 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
 
+    <script src="../js/js_form/js_form_recetario.js"></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
-    <script type="text/javascript">
-        $(document).ready(function(){
-            
-            $("#add-receta").click(function() {
-                var intId = $("#div-receta div").length + 1;
-                var fieldWrapper = $("<div class=\"fieldwrapper\" id=\"field" + intId + "\"/>");
-                
-                
-                var fType = $("<select class=\"fieldtype\"><option value=\"\">Receta 1</option><option value=\"\">Receta 2</option><option value=\"\">Receta 3</option></select>");
-                var removeButton = $("<button class=\"remove mainBtn3\" id=\"add\">-</button>");
-
-                removeButton.click(function() {
-                    $(this).parent().remove();
-                });
-                
-                fieldWrapper.append(fType);
-                fieldWrapper.append(removeButton);
-                $("#div-receta").append(fieldWrapper);
-            });
-
-
-        });
-
-    </script>
-
+    
 </body>
 </html>

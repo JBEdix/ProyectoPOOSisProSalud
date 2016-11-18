@@ -6,7 +6,7 @@
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <title>Conslta</title>
+    <title>Consulta</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
 
@@ -110,7 +110,7 @@
                                         <input type="text" id="txt_num_identidad" maxlength="15" placeholder="ejem: 0801-1990-12345">
                                     </div>
                                     <div class="col-md-2" align="left">
-                                        <button id="btn-buscar-consulta" class="mainBtn2">Buscar</button>
+                                        <button id="btn_buscar" class="mainBtn2">Buscar</button>
                                     </div>
                                     <div class="col-md-3" align="left">
                                         <a href="form_expediente.php">
@@ -120,18 +120,33 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
+                                    </div>
+                                    <div id="div_res" class="col-md-4 f" align="left">
+                                        
+                                    </div>                                  
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
                                         <label for="txt_nombre_paciente">Nombre del Paciente:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_nombre_paciente" maxlength="100" >
+                                        <input type="text" id="txt_nombre_paciente" disabled="true" maxlength="100" >
                                     </div>                                  
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="date_fecha">Fecha:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <input type="date" id="date_fecha_consulta">
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
                                         <label for="txt_turno_consulta">Turno Consulta:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_turno_consulta" maxlength="1000" disabled="true">
+                                        <input type="text" id="txt_turno_consulta" maxlength="1000" >
                                     </div>
                                 </div>
                                 <div class="row">
@@ -144,37 +159,66 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presion Arterial:</label>
+                                        <label for="slc_presion_arterial">Presion Arterial:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" maxlength="1000" >
+                                        <select id="slc_presion_arterial" >
+                                            
+                                        </select>
                                     </div>
                                 </div>
+                                <br>
                                 <div class="row">
                                     <div class="col-md-3" >
-                                        <label for="txt_presion_artalerial">Presio consulta:</label>
+                                        <label for="slc_peso">Peso:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
-                                        <input type="text" id="txt_presion_artalerial" disabled="true" value="500.00" maxlength="1000" >
+                                        <select id="slc_peso" >
+                                            
+                                        </select>
                                     </div>
                                 </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        <label for="slc_precio_consulta">Precio consulta:</label>
+                                    </div>
+                                    <div class="col-md-4 full-row" align="left">
+                                        <select id="slc_precio_consulta" style="width: 220px;">
+                                            
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
                                 <div class="row">
                                     <div class="col-md-3" >
                                         <label for="slc_doctor">Doctor:</label>
                                     </div>
                                     <div class="col-md-4 full-row" align="left">
                                         <select id="slc_doctor" >
-                                            <option>Doctor 1</option>
-                                            <option>Doctor 2</option>
+                                            
                                         </select>
                                     </div>
                                 </div>
+
                                 <div class="row">
                                     <div class="col-md-3" >
                                         
                                     </div>
-                                    <div class="col-md-4 full-row">
-                                        <button id="btn-crear-consulta" class="mainBtn">Crear consulta</button>
+                                    <div id="div-mensaje" class="col-md-4 full-row">
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3" >
+                                        
+                                    </div>
+                                    <div class="col-md-2 full-row">
+                                        <button id="btn_crear_consulta" class="mainBtn">Crear consulta</button>
+                                    </div>
+                                    <div class="col-md-2 full-row">
+                                        <button id="btn_nueva_consulta" class="mainBtn">Nueva consulta</button>
                                     </div>
                                 </div>
 
@@ -196,6 +240,7 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
     
+    <script src="../js/js_form/js_form_consulta.js"></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 </body>

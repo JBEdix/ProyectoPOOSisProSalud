@@ -31,11 +31,11 @@ $(document).ready(function(){
 	})
 
 	$("#btn-entrar").click(function(){
-		var parametros = "txt-usuario=" + $("#txt_usuario").val()+"&"+ 
-                         "txt-contraseña=" + $("#txt_contraseña").val();
+		var parametros = "usuario=" + $("#txt_usuario").val()+"&"+ 
+                         "contraseña=" + $("#txt_contraseña").val();
 
 		$.ajax({
-			url: "ajax/eventos.php",
+			url: "ajax/eventos.php?accion=1",
 			method: "POST",
 			data: parametros,
 			success:function(resultado){
@@ -53,7 +53,7 @@ $(document).ready(function(){
                     
                 }
                 else{
-                    alert(resultado);
+                    $("#res").html(resultado);
                     
                 }
 			}
@@ -61,34 +61,7 @@ $(document).ready(function(){
 
 	});//btn-guardar
 
-    //---------------------------------------------------------------------
-    //********************** funcion insertar imagen del contratado en el form_personal
-    //---------------------------------------------------------------------
-
-    function archivo(evt) {
-      var files = evt.target.files; // FileList object
-       
-        //Obtenemos la imagen del campo "file". 
-      for (var i = 0, f; f = files[i]; i++) {         
-           //Solo admitimos imágenes.
-           if (!f.type.match('image.*')) {
-                continue;
-           }
-       
-           var reader = new FileReader();
-           
-           reader.onload = (function(theFile) {
-               return function(e) {
-               // Creamos la imagen.
-                      document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-               };
-           })(f);
- 
-           reader.readAsDataURL(f);
-       }
-    }
-             
-      document.getElementById('files').addEventListener('change', archivo, false);
+    
       
 
 });//documnent

@@ -1,3 +1,8 @@
+<?php  
+$id =$_GET["id_empleado"];
+
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
 <![endif]-->
@@ -101,8 +106,9 @@
                                 <h2 class="page-title" align="left">Medicos</h2>
                             </div> <!-- /.page-header -->
                             <div  class="content-inner" align="center">
+                            <input type="hidden" id="txt_id_empleado" value="<?php echo $id; ?>">
 
-                                <div class="row">
+                                <div id="div_res" class="row">
                                     <div class="col-md-3">
                                     </div>
                                     <div class="col-md-6">
@@ -135,6 +141,7 @@
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/templatemo_custom.js"></script>
 
+    <script src='../js/js_form/js_form_detalle_medico.js'></script>
     <script src='../js/bootstrapvalidator.min.js'></script>
 
 
